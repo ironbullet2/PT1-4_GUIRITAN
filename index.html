@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+			   font-family: Arial, Helvetica, sans-serif;
+		}
+.flex-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: center;
+  background-color: DodgerBlue;	
+  padding:5px;
+}
+
+.flex-container div:hover {
+   text-decoration:none;
+   color: #005A9C;
+   background-color: #005A9C;
+}
+ 
+.flex-item {
+  text-align: center;
+  background-color: White;	
+  width: auto ;
+  margin: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+}
+.container {
+  padding: 10px;
+  background-color: DodgerBlue;
+  display: grid;
+  width: 100%px;
+  height:620px;
+  grid-template-columns: 1fr 1fr 174px;
+  grid-template-rows: 50px 585px; 
+  grid-template-areas:
+      "Header Header Header1"
+      "introduction introduction picture" ;
+     
+}
+.header {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  text-align: center;
+  grid-area: Header;
+  background-color: white;
+}
+
+.introduction {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: introduction;	
+  background-color: white;
+}
+
+.picture {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: picture;
+  background-color: white;
+}
+.Header1 {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: Header1;
+  background-color: white;
+   text-align: center;
+  }
+  
+@media screen and (max-width: 500px) {
+.container{
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  width: 447px ;
+  height: 1165px ;
+  grid-template-columns: 1fr ;
+  grid-template-rows: 1fr 1fr 585px 500px ; 	
+  grid-template-areas:
+      "Header"
+      "Header1"
+      "picture"
+      "introduction"  ; 
+	  
+}
+}	
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+</head>
+<body> 
+ <div class="container">
+    <div class="header">A Website all about me (probably)</div>
+	<div class="Header1"> <br>This is me</div>
+	<div class="introduction">
+	<ul>
+	    <li> Name : Lance Clarence B. Guiritan </li>
+		<li> Age : 15 </li>
+		<li> Birthday : Febuary 18 2007</li>
+		<li> Gender : Male  </li>
+		<li> Hobbies : Reading Light Novels , Reading Manga, Playing Games, Watching Anime </li>
+		<li> Sport : Soccer </li>
+	</ul>
+	</div>
+	<div class="picture"><td><img src="my picture.png" class=center bgcolor=white> </div>
+ </div>
+ <div class="flex-container">  
+   <div class="flex-item"><a href="index.html">Home</a></div>
+   <div class="flex-item"><a href="ln.html">Light Novels I Read</a></div>
+   <div class="flex-item"><a href="manga.html">Manga/Manhua I Read</a></div>
+ </div>   
+ <div class="flex-container">
+   <div class="flex-item"> <a href="anime.html">Anime I Watched</a></div> 
+   <div class="flex-item"> <a href="tanks.html">Tanks WW2</a></div> 
+   <div class="flex-item"> <a href="aircraft.html">Aircraft WW2</a></div>  
+</div>
+</body>
+</html>
+
+

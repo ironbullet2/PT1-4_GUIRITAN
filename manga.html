@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+			   font-family: Arial, Helvetica, sans-serif;
+		}
+.flex-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: center;
+  background-color: DodgerBlue;	
+  padding:5px;
+}
+
+.flex-container div:hover {
+   text-decoration:none;
+   color: #005A9C;
+   background-color: #005A9C;
+}
+ 
+.flex-item {
+  text-align: center;
+  background-color: White;	
+  width: auto ;
+  margin: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+.container {
+  text-align: center;
+  padding: 10px;
+  background-color: DodgerBlue;
+  display: grid;
+  width: 100%px;
+  height:350px;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 50px 305px; 
+  grid-template-areas:
+      "Header Header Header Header"
+      "Kakegurui SoloLeveling ChainsawMan BloomIntoYou";
+     
+}
+
+.Kakegurui {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: Kakegurui;
+  background-color: white;
+ }
+.SoloLeveling {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: SoloLeveling;
+  background-color: white;
+ }
+.ChainsawMan {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: ChainsawMan;
+  background-color: white;
+ }
+.BloomIntoYou {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: BloomIntoYou;
+  background-color: white;
+ }
+.header {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  text-align: center;
+  grid-area: Header;
+  background-color: white;
+}
+@media screen and (max-width: 500px) {
+.container{
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  width: 447px ;
+  height: 2500px ;
+  grid-template-columns: 447px ;
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr ; 	
+  grid-template-areas:
+      "Header"
+	  "Kakegurui" 
+	  "SoloLeveling" 
+	  "ChainsawMan" 
+	  "BloomIntoYou"; 
+	  
+}
+}	
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+</head>
+<body> 
+ <div class="container">
+    <div class="header"> Manga/Manhua	 <br>(click picture to read Manga/Manhua)</div>
+    <div class="Kakegurui"><td><a href="https://readm.org/manga/14826"><img src="Kakegurui.png" width=200 height=300 class=center bgcolor=white></a> </div>
+    <div class="SoloLeveling"><td><a href="https://readm.org/manga/16160"><img src="solo.jpg" width=200 height=300 class=center bgcolor=white></a> </div>
+	<div class="ChainsawMan"><td><a href="https://mangadex.org/title/a77742b1-befd-49a4-bff5-1ad4e6b0ef7b/chainsaw-man"><img src="chainsawman.jpg" width=200 height=300 class=center bgcolor=white></a> </div>
+	<div class="BloomIntoYou"><td><a href="https://mangadex.org/title/69060a67-1d4e-4110-9d29-838bfd99917f/yagate-kimi-ni-naru"><img src="BloomIntoYou.jpg" width=200 height=300 class=center bgcolor=white></a> </div>
+ </div>
+ <div class="flex-container">  
+   <div class="flex-item"><a href="index.html">Home</a></div>
+   <div class="flex-item"><a href="ln.html">Light Novels I Read</a></div>
+   <div class="flex-item"><a href="manga.html">Manga/Manhua I Read</a></div>
+ </div>   
+ <div class="flex-container">
+   <div class="flex-item"> <a href="anime.html">Anime I Watcheda></div> 
+   <div class="flex-item"> <a href="tanks.html">Tanks WW2</a></div> 
+   <div class="flex-item"> <a href="aircraft.html">Aircraft WW2</a></div> 
+</div>
+</body>
+</html>
+

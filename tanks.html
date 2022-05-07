@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+			   font-family: Arial, Helvetica, sans-serif;
+		}
+.flex-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: center;
+  background-color: DodgerBlue;	
+  padding:5px;
+}
+
+.flex-container div:hover {
+   text-decoration:none;
+   color: #005A9C;
+   background-color: #005A9C;
+}
+ 
+.flex-item {
+  text-align: center;
+  background-color: White;	
+  width: auto ;
+  margin: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+.container {
+  text-align: center;
+  padding: 10px;
+  background-color: DodgerBlue;
+  display: grid;
+  width: 100%px;
+  height:100%;
+  grid-template-columns: 400fr 400fr 400fr ;
+  grid-template-rows: 50px 305px 305px; 
+  grid-template-areas:
+      "Header Header Header"
+      "one two three" 
+	  "four five six";
+     
+}
+    
+
+.one {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: one;
+  background-color: white;
+ }
+.two {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: two;
+  background-color: white;
+ }
+.three {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: three;
+  background-color: white;
+ }
+.four {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: four;
+  background-color: white;
+ }
+.five {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: five;
+  background-color: white;
+ }
+.six {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: six;
+  background-color: white;
+ }
+.header {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  text-align: center;
+  grid-area: Header;
+  background-color: white;
+}
+@media screen and (max-width: 500px) {
+.container{
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  width: 447px ;
+  height: 2500px ;
+  grid-template-columns: 447px ;
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr 1fr 1fr; 	
+  grid-template-areas:
+      "Header"
+      "one"
+      "two"
+      "three" 
+      "four"
+      "five"	
+      "six"	  ; 
+	  
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+</head>
+<body> 
+ <div class="container">
+    <div class="header"> Tanks <br>(click picture for description)</div>
+    <div class="one"><td><a href="https://wiki.warthunder.com/T-34-85"> <img src="t-34-85.jpg" width=400 height=225 class=center bgcolor=white></a><br>T-34-85 </div>
+    <div class="two"><td><a href="https://wiki.warthunder.com/Tiger_H1"><img src="Tiger1.jpg" width=400 height=225 class=center bgcolor=white></a><br>Tiger H1</div>
+	<div class="three"><td><a href="https://wiki.warthunder.com/M4A3E2"><img src="m4a3e2.jpg" width=400 height=225 class=center bgcolor=white></a><br>M4A3E2 "Jumbo"</div>
+	<div class="four"><td><a href="https://wiki.warthunder.com/IS-2"><img src="IS-2.jpg" width=400 height=225 class=center bgcolor=white></a><br>IS-2</div>
+	<div class="five"><td><a href="https://wiki.warthunder.com/Pz.IV_H"><img src="PzIVH.jpg" width=400 height=225 class=center bgcolor=white></a><br>Panzer. IV H</div>
+	<div class="six"><td><a href="https://wiki.warthunder.com/Sherman_Firefly"><img src="firefly.jpg" width=400 height=225 class=center bgcolor=white></a><br>Sherman Firefly</div>
+ </div>
+  <div class="flex-container">  
+   <div class="flex-item"><a href="index.html">Home</a></div>
+   <div class="flex-item"><a href="ln.html">Light Novels I Read</a></div>
+   <div class="flex-item"><a href="manga.html">Manga/Manhua I Read</a></div>
+ </div>   
+<div class="flex-container">
+   <div class="flex-item"> <a href="anime.html">Anime I Watched</a></div> 
+   <div class="flex-item"> <a href="tanks.html">Tanks WW2</a></div> 
+    <div class="flex-item"> <a href="aircraft.html">Aircraft WW2</a></div> 
+</div>
+</body>
+</html>
+
